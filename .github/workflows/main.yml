@@ -1,0 +1,83 @@
+void setup() {
+
+  size(400, 300); // Tamaño de la ventana de dibujo
+
+}
+
+void draw() {
+
+  background(255, 192, 203); // Color de fondo (Rosa claro)
+
+  // Sol
+
+  fill(255, 182, 193); // Rosa claro
+
+  noStroke();
+
+  ellipse(350, 50, 50, 50); // Posición y tamaño del sol
+
+  // Nubes
+
+  fill(255); // Blanco
+
+  noStroke();
+
+  ellipse(100, 80, 80, 60); // Nube 1
+
+  ellipse(140, 80, 80, 60);
+
+  ellipse(180, 80, 80, 60);
+
+  ellipse(220, 80, 80, 60);
+
+  // Montañas
+
+  fill(219, 112, 147); // Rosa medio
+
+  noStroke();
+
+  triangle(0, 300, 150, 100, 300, 300); // Montaña izquierda
+
+  triangle(150, 300, 300, 50, 450, 300); // Montaña derecha
+
+  // Lago
+
+  fill(135, 206, 250); // Azul claro
+
+  noStroke();
+
+  ellipse(200, 320, 400, 150); // Posición y tamaño del lago
+
+  // Barco en el lago
+
+  fill(255); // Blanco
+
+  beginShape();
+
+  vertex(190, 240);
+
+  vertex(200, 190);
+
+  vertex(210, 240);
+
+  endShape(CLOSE);
+
+  fill(255, 69, 0); // Rojo oscuro
+
+  rect(195, 240, 10, 30); // Vela del barco
+
+  // Pájaros volando
+
+  stroke(0); // Negro
+
+  strokeWeight(2);
+
+  line(100, 50, 110, 40);
+
+  line(110, 40, 120, 50);
+
+  line(150, 80, 160, 70);
+
+  line(160, 70, 170, 80);
+
+}
